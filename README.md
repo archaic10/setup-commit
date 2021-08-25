@@ -25,7 +25,7 @@ yarn add @commitlint/config-conventional @commitlint/cli
 or
 
 ```
-npm install @com	mitlint/config-conventional @commitlint/cli
+npm install @commitlint/config-conventional @commitlint/cli
 ```
 
 Create a file with name "commitlint.config.js" enter the code below:
