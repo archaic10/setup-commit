@@ -2,7 +2,7 @@
 
 ------
 
-This project implements a pattern commit using commitlint to force the developer to commit to a pattern, and using commitzen, to create a mandatory form by performing a commit formatting to the standard used by the angular community which is the conventional changelog
+This project implements a pattern commit using commitlint to force the developer to commit to a pattern, and using commitzen, to create a mandatory form by performing a commit formatting to the standard used by the angular community which is the conventional changelog 
 
 ## Dependencys
 
