@@ -90,6 +90,7 @@ npx git-cz
 ```
 
 Yarn
+
 To finish, create a file named "prepare-commit-msg " inside the ./husky directory and insert the following code:
 
 ```
@@ -99,11 +100,12 @@ To finish, create a file named "prepare-commit-msg " inside the ./husky director
 exec < /dev/tty && node_modules/.bin/cz --hook || true
 ```
 Npm
+
 To finish, create a file named "prepare-commit-msg " inside the ./husky directory and insert the following code:
 
 ```
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-exec < /dev/tty && npx lint-staged && npx git-cz --hook || true
+exec < /dev/tty && npx git-cz --hook || true
 ```
