@@ -5,7 +5,6 @@ This project implements a pattern commit using commitlint to force the developer
 
 ## Dependencys
 
-------
 
 You will need install :
 
@@ -15,7 +14,6 @@ You will need install :
 
 ## Observation
 
-------
 Check version npm before implementing the husky, commitlint and commitzen
 
 Case you have a old version installed the npm, delete the  package-lock.json, and execute the command line npm install  
@@ -24,7 +22,6 @@ Case you have a old version installed the husky, remove the register on package.
 
 ## Process installation
 
-------
 
 ```
 yarn add @commitlint/config-conventional @commitlint/cli
