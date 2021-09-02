@@ -11,14 +11,15 @@ You will need install :
 - Commitlint
 - Husky
 - Commitzen
+- Git-cz (just for npm)
 
 ## Observation
 
-Check version npm before implementing the husky, commitlint and commitzen
+> Check version npm before implementing the husky, commitlint and commitzen
 
-Case you have a old version installed the npm, delete the  package-lock.json, and execute the command line npm install  
+> Case you have a old version installed the npm, delete the  package-lock.json, and execute the command line npm install  
 
-Case you have a old version installed the husky, remove the register on package.json, reinstall again the husky
+> Case you have a old version installed the husky, remove the register on package.json, reinstall again the husky
 
 ## Process installation
 
@@ -78,7 +79,9 @@ or
 ```
 npm install commitizen init cz-conventional-changelog --save-dev --save-exact
 ```
-For commizen to work with husky using npm, a few more steps are needed:
+## Npm
+
+> For commizen to work with husky using npm, a few more steps are needed:
 If you didn't use npm, skip this step
 Install git-cz
 ```
