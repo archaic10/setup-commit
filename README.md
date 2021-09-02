@@ -85,7 +85,7 @@ Install git-cz
 npx git-cz
 ```
 
-##Yarn
+## Yarn
 
 To finish, create a file named "prepare-commit-msg " inside the ./husky directory and insert the following code:
 
@@ -95,7 +95,7 @@ To finish, create a file named "prepare-commit-msg " inside the ./husky director
 
 exec < /dev/tty && node_modules/.bin/cz --hook || true
 ```
-##Npm
+## Npm
 
 To finish, create a file named "prepare-commit-msg " inside the ./husky directory and insert the following code:
 
