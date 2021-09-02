@@ -82,7 +82,9 @@ npm install commitizen init cz-conventional-changelog --save-dev --save-exact
 ## Npm
 
 > For commizen to work with husky using npm, a few more steps are needed:
-If you didn't use npm, skip this step
+
+> If you didn't use npm, skip this step
+
 Install git-cz
 ```
 npx git-cz
