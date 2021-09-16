@@ -91,6 +91,16 @@ or
 ```
 npm install commitizen init cz-conventional-changelog --save-dev --save-exact
 ```
+Add this script in your package json
+
+```
+"config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+ }
+```
+
 ## Npm
 
 > For commizen to work with husky using npm, a few more steps are needed:
