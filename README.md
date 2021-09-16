@@ -25,7 +25,7 @@ You will need install :
 
 
 ```
-yarn add @commitlint/config-conventional @commitlint/cli
+yarn add @commitlint/config-conventional @commitlint/cli --dev
 ```
 
 or
@@ -41,13 +41,25 @@ Create a file with name "commitlint.config.js" enter the code below:
 Install husky to set the command to run whenever a commit happens:
 
 ```
-yarn add husky
+yarn add husky --dev
 ```
 
 or 
 
 ```
 npm install husky
+```
+
+To initialize the husky execute:
+
+```
+npx husky install
+```
+
+or
+
+```
+yarn husky install
 ```
 
 Enter the code below to check commits before they are created:
@@ -59,7 +71,7 @@ npx husky add .husky/commit-msg 'npx --no-install commitlint --edit "$1"'
 Install the commitizen:
 
 ```
-yarn add commitizen
+yarn add commitizen --dev
 ```
 
 or 
@@ -109,4 +121,19 @@ To finish, create a file named "prepare-commit-msg " inside the ./husky director
 . "$(dirname "$0")/_/husky.sh"
 
 exec < /dev/tty && npx git-cz --hook || true
+```
+## Warning
+> Case have problem on execution the hook, how how per example:
+
+> hint: The '.husky/prepare-commit-msg' hook was ignored because it's not set as executable.
+> hint: You can disable this warning with `git config advice.ignoredHook false
+
+Then execute the command lines:
+
+```
+chmod ug+x .husky/*
+```
+
+```
+chmod ug+x .git/hooks/*
 ```
